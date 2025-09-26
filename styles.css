@@ -1,0 +1,201 @@
+/* =========================
+   Musicala · Inducción
+   styles.css (versión cool)
+   — Respetando el HTML/JS original
+   — Paleta de marca: Azul Mozart, Violeta Beethoven, Magenta Brahms, Azul Wagner, Blanco Debussy
+   ========================= */
+
+/* Fuente primaria según manual (Roboto); si no carga, usa sistema */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
+
+:root{
+  /* Colores de marca */
+  --mozart:#0C41C4;     /* Azul Mozart */
+  --beethoven:#680DBF;  /* Violeta Beethoven */
+  --brahms:#CE0071;     /* Magenta Brahms */
+  --wagner:#0C0A1E;     /* Azul Wagner (fondo oscuro) */
+  --debussy:#F9F9F9;    /* Blanco Debussy */
+  --haydn:#E6E8E8;      /* Gris Haydn */
+  --ink:#1f2937;        /* texto principal */
+  --muted:#6b7280;      /* texto secundario */
+
+  --primary: var(--mozart);
+  --radius: 16px;
+  --radius-sm: 12px;
+  --shadow: 0 10px 30px rgba(12,65,196,.18);
+  --shadow-soft: 0 6px 16px rgba(0,0,0,.08);
+  --maxw: 1100px;
+
+  /* Tipografía y ritmos */
+  --font: "Roboto", system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  --h1: clamp(1.6rem, 1.1rem + 1.8vw, 2rem);
+  --h2: clamp(1.25rem, 1rem + 1vw, 1.6rem);
+  --round: 999px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* -------- Base -------- */
+html,body{height:100%}
+body{
+  font-family:var(--font);
+  color:var(--ink);
+  line-height:1.6;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(104,13,191,.12), transparent 55%),
+    radial-gradient(800px 500px at 95% 0%, rgba(206,0,113,.08), transparent 50%),
+    linear-gradient(#ffffff, #f5f7ff 60%, #f7f9ff);
+}
+
+/* -------- Contenedores -------- */
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 18px}
+
+/* -------- Header hero “glass” -------- */
+.site-header{
+  position:sticky; top:0; z-index:20;
+  backdrop-filter:saturate(1.2) blur(8px);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.65));
+  border-bottom:1px solid rgba(12, 65, 196, .15);
+}
+.header-grid{display:flex; align-items:center; gap:14px; padding:14px 0}
+.logo{height:64px; width:auto; filter: drop-shadow(0 2px 6px rgba(0,0,0,.15))}
+.titles h1{font-size:var(--h1); font-weight:900; letter-spacing:.2px; color:var(--wagner)}
+.subtitle{color:var(--muted); font-weight:400}
+
+/* -------- Tabs: barra sticky con scroll suave -------- */
+.tabs{
+  position:sticky; top:84px; z-index:19;
+  display:flex; flex-wrap:nowrap; gap:10px;
+  overflow:auto hidden; scrollbar-width:none;
+  padding:14px 4px 12px;
+  background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
+  border-bottom:1px solid rgba(12,65,196,.10);
+  backdrop-filter:saturate(1.2) blur(8px);
+}
+.tabs::-webkit-scrollbar{display:none}
+
+.tab{
+  white-space:nowrap;
+  border:none;
+  padding:10px 14px;
+  font-weight:700;
+  border-radius:var(--round);
+  color:var(--primary);
+  background:
+    linear-gradient(180deg, #fff, #f7f9ff);
+  box-shadow: var(--shadow-soft);
+  border:1px solid rgba(12,65,196,.20);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+}
+.tab:hover{transform:translateY(-1px); box-shadow:var(--shadow)}
+.tab.is-active{
+  color:#fff;
+  background:
+    linear-gradient(135deg, var(--primary) 0%, var(--beethoven) 55%, var(--brahms) 110%);
+  border-color:transparent;
+  box-shadow:0 10px 28px rgba(12,65,196,.35);
+}
+
+/* -------- Panels / Cards -------- */
+.tabpanel{display:none}
+.tabpanel.is-active{display:block; animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:translateY(0)}}
+
+.card{
+  background:#fff; border-radius:var(--radius);
+  padding:28px; margin:18px 0 26px;
+  box-shadow: var(--shadow);
+  border:1px solid rgba(12,65,196,.08);
+}
+.card h2{font-size:var(--h2); color:var(--primary); margin-bottom:8px; font-weight:900}
+.card .lead{color:#4b5563; font-size:1.05rem; margin-bottom:14px}
+
+.subcard{
+  background:linear-gradient(180deg, #f7f9ff, #ffffff);
+  border-radius:var(--radius-sm);
+  padding:18px;
+  border:1px solid rgba(12,65,196,.12);
+  box-shadow: var(--shadow-soft);
+  margin-top:12px;
+}
+.subcard h3{color:var(--primary); margin-bottom:6px; font-weight:800}
+
+/* -------- Listas con bullets “nota” -------- */
+ul.bullets{list-style:none}
+ul.bullets li{
+  padding:6px 0 6px 0; position:relative;
+}
+ul.bullets li::before{
+  content:"";
+  width:.55rem; height:.55rem; border-radius:50%;
+  background: radial-gradient(circle at 40% 40%, var(--primary), var(--beethoven));
+  display:inline-block; margin-right:.55rem; transform:translateY(1px)
+}
+
+/* -------- Badges (componentes) -------- */
+.badges{display:flex; flex-wrap:wrap; gap:8px; margin:.75rem 0 0}
+.badge{
+  display:inline-block; padding:.4rem .7rem; border-radius:var(--round);
+  font-size:.85rem; font-weight:800; letter-spacing:.2px;
+  border:1.5px solid rgba(12,65,196,.35);
+  color:var(--primary); background:#fff;
+  box-shadow: var(--shadow-soft);
+}
+.badge.base{
+  color:#fff; border-color:transparent;
+  background:linear-gradient(135deg, var(--primary), var(--beethoven) 70%);
+}
+
+/* -------- Timeline (estructura de clase) -------- */
+.timeline{
+  display:flex; width:100%; overflow:hidden;
+  border-radius:20px; margin:16px 0 6px;
+  box-shadow: var(--shadow); border:1px solid rgba(12,65,196,.12);
+}
+.t-seg{
+  position:relative; min-width:120px; padding:16px 14px;
+  background:#fff; border-right:1px solid rgba(12,65,196,.10);
+}
+.t-seg:last-child{border-right:none}
+.t-title{font-weight:900; color:var(--wagner); margin-bottom:2px}
+.t-min{font-size:.9rem; color:var(--muted)}
+/* degradé suave por columna usando nth-child */
+.t-seg:nth-child(1){background:linear-gradient(180deg,#ffffff, #eef3ff)}
+.t-seg:nth-child(2){background:linear-gradient(180deg,#ffffff, #eef0ff)}
+.t-seg:nth-child(3){background:linear-gradient(180deg,#ffffff, #efeaff)}
+.t-seg:nth-child(4){background:linear-gradient(180deg,#ffffff, #fff0f6)}
+
+/* -------- Links -------- */
+.ext-link{
+  display:inline-block; margin-top:.9rem; font-weight:900;
+  color:var(--primary); text-decoration:none; border-bottom:2px solid var(--primary);
+}
+.ext-link:hover{opacity:.85}
+
+/* -------- Footer oscuro pro -------- */
+.site-footer{
+  background: var(--wagner); color:#fff; text-align:center;
+  padding:26px 0; margin-top:36px; font-size:.98rem;
+}
+.site-footer small{display:block; opacity:.9; margin-top:6px}
+
+/* -------- Utilidades -------- */
+.noscript{margin:20px 0; color:var(--muted); font-style:italic; text-align:center}
+
+/* -------- Responsive -------- */
+@media (max-width: 720px){
+  .header-grid{flex-direction:column; text-align:center}
+  .logo{height:58px}
+  .card{padding:22px}
+  .t-seg{min-width:100px; padding:14px 12px}
+  .tab{padding:9px 12px}
+}
+
+/* -------- Modo Impresión (para usar como manual) -------- */
+@media print{
+  .tabs, .site-header{position:static; box-shadow:none}
+  .tab{border-color:#bbb; box-shadow:none; background:#fff; color:#000}
+  .site-footer{background:#fff; color:#000; border-top:1px solid #ccc}
+  body{background:#fff}
+}

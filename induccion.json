@@ -1,0 +1,127 @@
+{
+  "que_es": {
+    "lead": "Musicala es una escuela de artes integrales con enfoque humano: música, danza, teatro y artes plásticas al servicio del desarrollo sensible, técnico y creativo.",
+    "text": "Aquí el arte se vive desde adentro: exploración con sentido, técnica con emoción y procesos que respetan el ritmo de cada persona. Trabajamos con metodologías propias y acompañamiento cercano para que cada estudiante encuentre su voz, su movimiento y su forma de crear."
+  },
+
+  "lineas_formacion": {
+    "items": [
+      "Música: canto, instrumentos, ensambles y lenguaje musical.",
+      "Danza: formación corporal, estilos y creación coreográfica.",
+      "Artes plásticas: dibujo, color, volumen, técnicas mixtas.",
+      "Teatro: actuación, expresión, juego dramático y montaje."
+    ]
+  },
+
+  "pilares": {
+    "items": [
+      "Creatividad con propósito",
+      "Sensibilidad y humanidad",
+      "Integralidad (técnica + emoción)",
+      "Aprendizaje significativo y en proceso",
+      "Juego, curiosidad y cuidado"
+    ]
+  },
+
+  "metodologia_crea": {
+    "title": "Método CREA — Concentración · Recursos · Exploración · Adaptabilidad",
+    "lead": "Nuestra brújula pedagógica para acompañar procesos auténticos.",
+    "text": "<p><strong>C – Concentración</strong>: presencia y foco (respiración, escucha, conciencia corporal/sonora).<br/><strong>R – Recursos</strong>: técnicos, expresivos y pedagógicos (ejercicios, partituras, dinámicas, materiales y herramientas digitales).<br/><strong>E – Exploración</strong>: juego, improvisación y prueba — el error como parte del aprendizaje.<br/><strong>A – Adaptabilidad</strong>: ajustar contenidos y rutas según edad, nivel, intereses y necesidades del grupo.</p><p>CREA integra técnica y emoción para que el arte sea significativo en la vida cotidiana y en comunidad.</p>"
+  },
+
+  "componentes": {
+    "title": "Componentes de clase",
+    "lead": "Siete componentes estructuran la experiencia; los cuatro primeros son la base de cada sesión.",
+    "badges": [
+      { "label": "Corporal", "base": true },
+      { "label": "Técnico", "base": true },
+      { "label": "Teórico", "base": true },
+      { "label": "Repertorio/Obras", "base": true },
+      { "label": "Complementario" },
+      { "label": "Actitudinal" },
+      { "label": "Socioafectivo" }
+    ],
+    "items": [
+      "Corporal: disposición física, calentamiento, coordinación, respiración.",
+      "Técnico: ejercicios específicos del área (afinación, ritmo, técnica, herramienta).",
+      "Teórico: conceptos y lenguaje del arte (lectura, análisis, contexto).",
+      "Repertorio/Obras: aplicación en piezas, escenas, coreografías o proyectos.",
+      "Complementario: tecnología, juego, creatividad transversal, recursos digitales.",
+      "Actitudinal: hábitos, compromiso, liderazgo, cuidado de sí y del otro.",
+      "Socioafectivo: clima de grupo, empatía, comunicación y trabajo colaborativo."
+    ]
+  },
+
+  "categorias": {
+    "items": [
+      "Musicalitos (4–6 años)",
+      "Niños (7–11 años)",
+      "Jóvenes (12–17 años)",
+      "Adultos"
+    ]
+  },
+
+  "rutas_adn": {
+    "title": "Rutas de aprendizaje (ADN)",
+    "text": "Rutas progresivas con metas por nivel: fundamentos, desarrollo, proyección. Cada estudiante avanza con criterios claros y acompañamiento cercano, documentando evidencias de proceso."
+  },
+
+  "acompanamiento": {
+    "descripcion": "Equilibramos libertad creativa con guía docente. Observamos evidencias, damos retroalimentación útil y co-diseñamos estrategias según objetivos y necesidades del grupo/estudiante.",
+    "sobreestimulación": "Regular el estímulo con pausas y foco; priorizar calidad sobre cantidad.",
+    "falta_empatia": "Escucha activa, validación emocional y acuerdos de convivencia.",
+    "falta_recursos": "Creatividad con lo disponible; adaptar materiales sin perder intención pedagógica.",
+    "subestimar": "Expectativas altas pero posibles; reto justo y reconocimiento del avance.",
+    "exceso_exploracion": "Abrir posibilidades con ruta y propósito; consignar objetivo antes de explorar.",
+    "falta_autoridad": "Autoridad tranquila: límites claros + coherencia + respeto.",
+    "falta_planeacion": "Planeación anticipada con variantes; checklist mínimo de clase.",
+    "tiempo_en_clase": "Conciencia del tiempo por bloques; cronómetro visible y cierres a tiempo."
+  },
+
+  "estructura_clase": {
+    "title": "Estructura de clase sugerida",
+    "items": [
+      "Reconocimiento y llamado a lista.",
+      "Componente corporal: calentamiento y estiramiento.",
+      "Componente técnico.",
+      "Componente teórico.",
+      "Componente de obras (repertorio, montaje, escena, coreografía).",
+      "Cierre (reflexión), registro de clase y organización del espacio."
+    ],
+    "timeline": [
+      { "title": "Reconocimiento + Calentamiento", "min": 5 },
+      { "title": "Técnico + Teórico", "min": 25 },
+      { "title": "Obras/Repertorio", "min": 25 },
+      { "title": "Cierre", "min": 5 }
+    ]
+  },
+
+  "materiales_herramientas": {
+    "items": [
+      "Instrumentos y materiales según el área (cuidado y orden al finalizar).",
+      "Equipo básico: reproductor/altavoz, proyector (si aplica), papelógrafo.",
+      "Recursos digitales: pistas, apps, documentos compartidos.",
+      "Kits de clase: marcadores, cintas, hojas, elementos de juego/ritmo."
+    ]
+  },
+
+  "herramientas_registro": {
+    "items": [
+      "Asistencia y planeación de clase (formatos/hojas compartidas).",
+      "Bitácora pedagógica: criterios, acuerdos y retos del siguiente encuentro.",
+      "Evidencias: audio (1–3 min), video de ensayo/fragmento, fotos de proceso.",
+      "Aplicativos Musicala para reportes y seguimiento."
+    ]
+  },
+
+  "muestras_objetivos": {
+    "title": "Muestras de proceso",
+    "text": "Momento <em>mensual, breve y formativo</em> para visibilizar el aprendizaje, explicar criterios y acordar el siguiente paso. No buscamos show perfecto sino <strong>proceso honesto</strong>: puchitos, bocetos, pruebas y avances compartidos con familias como público pedagógico. Ruta sugerida: de lo simple a lo grande (audio 1–3 min → video → micro-muestras → eventos internos → conciertos/funciones).",
+    "link": { "href": "https://musicalaescuela.github.io/muestrasdeproceso/#musica", "text": "Ver guía de Muestras de Proceso" }
+  },
+
+  "protocolos": {
+    "emergencias": "<ul class='bullets'><li>Seguir rutas de evacuación y mantener la calma.</li><li>Priorizar la seguridad de NNA y reportar a coordinación.</li><li>Registrar el incidente y activar contactos definidos.</li></ul>",
+    "situaciones_problema": "<ul class='bullets'><li>Comunicación inmediata a coordinación; no actuar en solitario.</li><li>Empatía y contención; evitar juicios y exposición.</li><li>Aplicar el paso a paso institucional y documentar la novedad.</li></ul>"
+  }
+}
