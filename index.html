@@ -25,24 +25,34 @@
   </header>
 
   <main class="wrap">
-    <!-- Barra de tabs -->
-    <nav class="tabs" role="tablist" aria-label="Secciones de inducción">
-      <button role="tab" class="tab is-active" aria-selected="true" aria-controls="tab-que-es" id="tabbtn-que-es">¿Qué es Musicala?</button>
-      <button role="tab" class="tab" aria-controls="tab-lineas" id="tabbtn-lineas">Líneas de formación</button>
-      <button role="tab" class="tab" aria-controls="tab-pilares" id="tabbtn-pilares">Pilares</button>
-      <button role="tab" class="tab" aria-controls="tab-crea" id="tabbtn-crea">Metodología CREA</button>
-      <button role="tab" class="tab" aria-controls="tab-componentes" id="tabbtn-componentes">Componentes</button>
-      <button role="tab" class="tab" aria-controls="tab-categorias" id="tabbtn-categorias">Categorías</button>
-      <button role="tab" class="tab" aria-controls="tab-adn" id="tabbtn-adn">Rutas de aprendizaje (ADN)</button>
-      <button role="tab" class="tab" aria-controls="tab-acompanamiento" id="tabbtn-acompanamiento">Acompañamiento pedagógico</button>
-      <button role="tab" class="tab" aria-controls="tab-estructura" id="tabbtn-estructura">Estructura de clase</button>
-      <button role="tab" class="tab" aria-controls="tab-materiales" id="tabbtn-materiales">Materiales y herramientas</button>
-      <button role="tab" class="tab" aria-controls="tab-registro" id="tabbtn-registro">Herramientas de registro</button>
-      <button role="tab" class="tab" aria-controls="tab-muestras" id="tabbtn-muestras">Muestras de proceso / Objetivos</button>
-      <button role="tab" class="tab" aria-controls="tab-protocolos" id="tabbtn-protocolos">Protocolos</button>
-    </nav>
+    <!-- ===== Barra de tabs con flechas ===== -->
+    <div class="tabs-rail" aria-label="Navegación por secciones">
+      <button class="tabs-arrow prev" type="button" aria-label="Desplazar a la izquierda" title="Anterior">
+        <span aria-hidden="true">‹</span>
+      </button>
 
-    <!-- Paneles -->
+      <nav class="tabs" role="tablist" aria-label="Secciones de inducción">
+        <button role="tab" class="tab is-active" aria-selected="true" aria-controls="tab-que-es" id="tabbtn-que-es">¿Qué es Musicala?</button>
+        <button role="tab" class="tab" aria-controls="tab-lineas" id="tabbtn-lineas">Líneas de formación</button>
+        <button role="tab" class="tab" aria-controls="tab-pilares" id="tabbtn-pilares">Pilares</button>
+        <button role="tab" class="tab" aria-controls="tab-crea" id="tabbtn-crea">Metodología CREA</button>
+        <button role="tab" class="tab" aria-controls="tab-componentes" id="tabbtn-componentes">Componentes</button>
+        <button role="tab" class="tab" aria-controls="tab-categorias" id="tabbtn-categorias">Edades</button>
+        <button role="tab" class="tab" aria-controls="tab-adn" id="tabbtn-adn">Rutas de aprendizaje (ADN)</button>
+        <button role="tab" class="tab" aria-controls="tab-acompanamiento" id="tabbtn-acompanamiento">Acompañamiento pedagógico</button>
+        <button role="tab" class="tab" aria-controls="tab-estructura" id="tabbtn-estructura">Estructura de clase</button>
+        <button role="tab" class="tab" aria-controls="tab-materiales" id="tabbtn-materiales">Materiales y herramientas</button>
+        <button role="tab" class="tab" aria-controls="tab-registro" id="tabbtn-registro">Herramientas de registro</button>
+        <button role="tab" class="tab" aria-controls="tab-muestras" id="tabbtn-muestras">Muestras de proceso / Objetivos</button>
+        <button role="tab" class="tab" aria-controls="tab-protocolos" id="tabbtn-protocolos">Protocolos</button>
+      </nav>
+
+      <button class="tabs-arrow next" type="button" aria-label="Desplazar a la derecha" title="Siguiente">
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+
+    <!-- ===== Paneles ===== -->
     <section id="tab-que-es" class="tabpanel is-active" role="tabpanel" aria-labelledby="tabbtn-que-es" tabindex="0">
       <article class="card" data-key="que_es">
         <h2>¿Qué es Musicala?</h2>
@@ -79,9 +89,10 @@
       </article>
     </section>
 
+    <!-- Edades (antes “Categorías”) -->
     <section id="tab-categorias" class="tabpanel" role="tabpanel" aria-labelledby="tabbtn-categorias" tabindex="0">
       <article class="card" data-key="categorias">
-        <h2>Categorías</h2>
+        <h2>Edades</h2>
         <div class="content js-slot"></div>
       </article>
     </section>
@@ -93,6 +104,7 @@
       </article>
     </section>
 
+    <!-- Acompañamiento: detallado desde JSON -->
     <section id="tab-acompanamiento" class="tabpanel" role="tabpanel" aria-labelledby="tabbtn-acompanamiento" tabindex="0">
       <article class="card" data-key="acompanamiento">
         <h2>Acompañamiento pedagógico</h2>
@@ -105,16 +117,11 @@
 
           <div class="subcard">
             <h3>Evidencias y situaciones comunes</h3>
-            <ul class="bullets">
-              <li data-key="acompanamiento.sobreestimulación">Sobreestimulación</li>
-              <li data-key="acompanamiento.falta_empatia">Falta de empatía</li>
-              <li data-key="acompanamiento.falta_recursos">Falta de recursos</li>
-              <li data-key="acompanamiento.subestimar">Subestimar</li>
-              <li data-key="acompanamiento.exceso_exploracion">Falta de guía / exceso de exploración</li>
-              <li data-key="acompanamiento.falta_autoridad">Falta de autoridad</li>
-              <li data-key="acompanamiento.falta_planeacion">Falta de planeación</li>
-              <li data-key="acompanamiento.tiempo_en_clase">Conciencia del tiempo en clase</li>
-            </ul>
+            <p class="muted" data-key="acompanamiento.evidencias.text"></p>
+            <!-- items detallados como subcards -->
+            <div data-key="acompanamiento.evidencias.items">
+              <div class="content js-slot"></div>
+            </div>
           </div>
         </div>
       </article>
@@ -179,8 +186,8 @@
   <!-- Config -->
   <script>
     window.INDUCCION_CONFIG = {
-      jsonUrl: "induccion.json",     // Fuente opcional para cargar contenidos
-      themeColor: "#0C41C4"          // Azul Musicala (ajustable)
+      jsonUrl: "induccion.json",     // Todo el contenido editable desde aquí
+      themeColor: "#0C41C4"          // Azul Musicala
     };
   </script>
 
