@@ -1,7 +1,7 @@
 {
   "que_es": {
-    "lead": "Musicala es una escuela de artes integrales con enfoque humano: música, danza, teatro y artes plásticas al servicio del desarrollo sensible, técnico y creativo.",
-    "text": "Aquí el arte se vive desde adentro: exploración con sentido, técnica con emoción y procesos que respetan el ritmo de cada persona. Trabajamos con metodologías propias y acompañamiento cercano para que cada estudiante encuentre su voz, su movimiento y su forma de crear."
+    "lead": "Musicala es una escuela de educación artística, dedicada a inspirar y desarrollar el talento creativo a través de la música, danza, teatro y artes plásticas.",
+    "text": "<p>Nos especializamos en ofrecer una formación integral, combinando métodos innovadores con un enfoque personalizado que se adapta a las necesidades y objetivos de cada estudiante.</p><p>Nuestro compromiso es crear un entorno donde el arte sea accesible para todos, brindando una experiencia educativa enriquecedora, tanto para individuos como para empresas. En Musicala, no solo enseñamos habilidades artísticas, sino que también impulsamos la expresión personal, el trabajo en equipo y el desarrollo del pensamiento crítico.</p>"
   },
 
   "lineas_formacion": {
@@ -15,18 +15,39 @@
 
   "pilares": {
     "items": [
-      "Creatividad con propósito",
-      "Sensibilidad y humanidad",
-      "Integralidad (técnica + emoción)",
-      "Aprendizaje significativo y en proceso",
-      "Juego, curiosidad y cuidado"
+      {
+        "title": "Bienestar integral",
+        "text": "Cuerpo, emoción y mente en equilibrio. Cuidamos el calentamiento, la respiración, la postura y la gestión emocional para que aprender sea seguro y disfrutable."
+      },
+      {
+        "title": "Comunidad",
+        "text": "Aprender en red: estudiantes, familias y docentes. Propiciamos acuerdos, comunicación clara y muestras de proceso como momentos pedagógicos compartidos."
+      },
+      {
+        "title": "Medio ambiente",
+        "text": "Uso responsable de materiales, reciclaje creativo y cuidado del entorno. El arte también es una forma de relacionarnos con el planeta."
+      },
+      {
+        "title": "Creatividad con propósito",
+        "text": "No es crear por crear: cada actividad tiene intención formativa y conecta con proyectos, repertorio o problemas reales."
+      },
+      {
+        "title": "Sensibilidad y humanidad",
+        "text": "Empatía y respeto como base del aula: escuchamos, validamos y acompañamos procesos diversos."
+      },
+      {
+        "title": "Integralidad (técnica + emoción)",
+        "text": "La técnica cobra sentido cuando expresa algo. Integramos recursos técnicos con exploración y sensibilidad."
+      },
+      {
+        "title": "Aprendizaje significativo y en proceso",
+        "text": "Valoramos el avance paso a paso: bocetos, puchitos, ensayos y micro-muestras como evidencia real de aprendizaje."
+      },
+      {
+        "title": "Juego, curiosidad y cuidado",
+        "text": "El juego abre posibilidades y la curiosidad guía. Siempre con límites claros y cuidado de sí y de los demás."
+      }
     ]
-  },
-
-  "metodologia_crea": {
-    "title": "Método CREA — Concentración · Recursos · Exploración · Adaptabilidad",
-    "lead": "Nuestra brújula pedagógica para acompañar procesos auténticos.",
-    "text": "<p><strong>C – Concentración</strong>: presencia y foco (respiración, escucha, conciencia corporal/sonora).<br/><strong>R – Recursos</strong>: técnicos, expresivos y pedagógicos (ejercicios, partituras, dinámicas, materiales y herramientas digitales).<br/><strong>E – Exploración</strong>: juego, improvisación y prueba — el error como parte del aprendizaje.<br/><strong>A – Adaptabilidad</strong>: ajustar contenidos y rutas según edad, nivel, intereses y necesidades del grupo.</p><p>CREA integra técnica y emoción para que el arte sea significativo en la vida cotidiana y en comunidad.</p>"
   },
 
   "componentes": {
@@ -54,10 +75,30 @@
 
   "categorias": {
     "items": [
-      "Musicalitos (4–6 años)",
-      "Niños (7–11 años)",
-      "Jóvenes (12–17 años)",
-      "Adultos"
+      {
+        "title": "Musibabies (1–3 años)",
+        "text": "Exploración sensorial, ritmo natural, vínculo y juego musical con movimiento. Actividades cortas, repetibles y seguras; motricidad gruesa y fina básica."
+      },
+      {
+        "title": "Musicalitos (4–6 años)",
+        "text": "Juego simbólico, coordinación, escucha y primeras nociones de pulso/altura. Cuentos sonoros, juegos rítmicos y creación espontánea."
+      },
+      {
+        "title": "Musikids (7–11 años)",
+        "text": "Bases técnicas del área elegida: lectura rítmica y melódica sencilla, repertorio corto, hábitos de práctica y ensamble inicial."
+      },
+      {
+        "title": "Musiteens (12–15 años)",
+        "text": "Profundización técnica y expresiva, identidad artística y proyectos guiados. Ensamble, composición/creación básica y responsabilidad en el proceso."
+      },
+      {
+        "title": "Musigrandes (16–40 años)",
+        "text": "Rutas flexibles desde intereses personales. Técnica aplicada a objetivos concretos (proyectos, grabaciones, presentaciones) y bienestar."
+      },
+      {
+        "title": "Musiadultos (40+)",
+        "text": "Aprendizaje a ritmo propio con foco en bienestar, memoria, coordinación y disfrute. Procesos personalizados y cuidado físico."
+      }
     ]
   },
 
@@ -67,19 +108,81 @@
   },
 
   "acompanamiento": {
-    "descripcion": "Equilibramos libertad creativa con guía docente. Observamos evidencias, damos retroalimentación útil y co-diseñamos estrategias según objetivos y necesidades del grupo/estudiante.",
-    "sobreestimulación": "Regular el estímulo con pausas y foco; priorizar calidad sobre cantidad.",
-    "falta_empatia": "Escucha activa, validación emocional y acuerdos de convivencia.",
-    "falta_recursos": "Creatividad con lo disponible; adaptar materiales sin perder intención pedagógica.",
-    "subestimar": "Expectativas altas pero posibles; reto justo y reconocimiento del avance.",
-    "exceso_exploracion": "Abrir posibilidades con ruta y propósito; consignar objetivo antes de explorar.",
-    "falta_autoridad": "Autoridad tranquila: límites claros + coherencia + respeto.",
-    "falta_planeacion": "Planeación anticipada con variantes; checklist mínimo de clase.",
-    "tiempo_en_clase": "Conciencia del tiempo por bloques; cronómetro visible y cierres a tiempo."
+    "descripcion": "Equilibramos la libertad creativa con guía docente. Celebramos lo que está bien y nombramos con claridad las oportunidades de mejora para que el proceso sea honesto y consistente.",
+    "evidencias": {
+      "text": "Nombrarlas nos permite ajustar planeaciones, criterios y acuerdos de clase con acciones concretas.",
+      "items": [
+        {
+          "title": "Sobreestimulación",
+          "text": "Demasiado estímulo simultáneo (volumen alto, consignas múltiples, cambios rápidos).",
+          "items": [
+            "Bajar intensidad y pausar; una consigna a la vez.",
+            "Menos actividades, mejor tiempo de cierre."
+          ]
+        },
+        {
+          "title": "Falta de empatía",
+          "text": "Respuestas frías o desconsideradas frente a emociones o ritmos de aprendizaje.",
+          "items": [
+            "Escucha activa y validación; acuerdos de convivencia.",
+            "Retroalimentación descriptiva, no juiciosa."
+          ]
+        },
+        {
+          "title": "Falta de recursos",
+          "text": "Materiales o herramientas insuficientes para la intención de la clase.",
+          "items": [
+            "Adaptar con creatividad lo disponible.",
+            "Planear variantes sin perder propósito."
+          ]
+        },
+        {
+          "title": "Subestimar",
+          "text": "Bajar la exigencia por prejuicio de edad o nivel.",
+          "items": [
+            "Reto justo con metas alcanzables.",
+            "Reconocer avances y ofrecer escalones."
+          ]
+        },
+        {
+          "title": "Falta de guía / exceso de exploración",
+          "text": "Exploración sin dirección ni objetivos claros.",
+          "items": [
+            "Definir objetivo y criterios antes de explorar.",
+            "Cerrar con síntesis y próximos pasos."
+          ]
+        },
+        {
+          "title": "Falta de autoridad",
+          "text": "Límites difusos o incoherentes, clima indisciplinado.",
+          "items": [
+            "Autoridad tranquila: límites + consecuencias consistentes.",
+            "Coherencia entre palabras y acciones."
+          ]
+        },
+        {
+          "title": "Falta de planeación",
+          "text": "Sesiones improvisadas o sin variantes según grupo.",
+          "items": [
+            "Planeación mínima con plan B/C.",
+            "Checklist de materiales y tiempos."
+          ]
+        },
+        {
+          "title": "Conciencia del tiempo en clase",
+          "text": "Bloques desbalanceados o cierres apresurados.",
+          "items": [
+            "Cronómetro visible y recordatorios de cambio de bloque.",
+            "Espacio final para reflexión y orden."
+          ]
+        }
+      ]
+    }
   },
 
   "estructura_clase": {
     "title": "Estructura de clase sugerida",
+    "text": "<p>Los tiempos son orientativos y se ajustan a edad/nivel. La clave es <strong>cerrar cada bloque</strong> y dejar claro el <em>próximo paso</em>. Usa cronómetro visible.</p>",
     "items": [
       "Reconocimiento y llamado a lista.",
       "Componente corporal: calentamiento y estiramiento.",
@@ -118,6 +221,12 @@
     "title": "Muestras de proceso",
     "text": "Momento <em>mensual, breve y formativo</em> para visibilizar el aprendizaje, explicar criterios y acordar el siguiente paso. No buscamos show perfecto sino <strong>proceso honesto</strong>: puchitos, bocetos, pruebas y avances compartidos con familias como público pedagógico. Ruta sugerida: de lo simple a lo grande (audio 1–3 min → video → micro-muestras → eventos internos → conciertos/funciones).",
     "link": { "href": "https://musicalaescuela.github.io/muestrasdeproceso/#musica", "text": "Ver guía de Muestras de Proceso" }
+  },
+
+  "metodologia_crea": {
+    "title": "Método CREA — Concentración · Recursos · Exploración · Adaptabilidad",
+    "lead": "Nuestra brújula pedagógica para acompañar procesos auténticos.",
+    "text": "<p><strong>C – Concentración</strong>: presencia y foco (respiración, escucha, conciencia corporal/sonora).<br/><strong>R – Recursos</strong>: técnicos, expresivos y pedagógicos (ejercicios, partituras, dinámicas, materiales y herramientas digitales).<br/><strong>E – Exploración</strong>: juego, improvisación y prueba — el error como parte del aprendizaje.<br/><strong>A – Adaptabilidad</strong>: ajustar contenidos y rutas según edad, nivel, intereses y necesidades del grupo.</p><p>CREA integra técnica y emoción para que el arte sea significativo en la vida cotidiana y en comunidad.</p>"
   },
 
   "protocolos": {
