@@ -199,3 +199,74 @@ ul.bullets li::before{
   .site-footer{background:#fff; color:#000; border-top:1px solid #ccc}
   body{background:#fff}
 }
+
+/* ===== Flechas y riel de tabs ===== */
+.tabs-rail{
+  position: sticky; top:84px; z-index:19;
+  display:flex; align-items:center; gap:8px;
+  padding:14px 4px 12px;
+  background:linear-gradient(180deg, rgba(255,255,255,.9), rgba(255,255,255,.7));
+  border-bottom:1px solid rgba(12,65,196,.10);
+  backdrop-filter:saturate(1.2) blur(8px);
+}
+
+/* La nav interna se vuelve el scroller horizontal */
+.tabs{
+  flex:1; display:flex; flex-wrap:nowrap; gap:10px;
+  overflow:auto hidden; scrollbar-width:none;
+  background:transparent; /* hereda */
+}
+.tabs::-webkit-scrollbar{display:none}
+
+/* Botones flecha */
+.tabs-arrow{
+  flex:0 0 auto;
+  width:36px; height:36px; border:none; border-radius:999px;
+  display:grid; place-items:center; cursor:pointer;
+  color:#fff; font-weight:900;
+  background:linear-gradient(135deg, var(--primary), var(--beethoven));
+  box-shadow: var(--shadow);
+}
+.tabs-arrow[disabled]{opacity:.35; cursor:default}
+.tabs-arrow span{font-size:22px; line-height:1; transform:translateY(-1px)}
+
+@media (max-width: 720px){
+  /* En móvil no hacen tanta falta */
+  .tabs-arrow{display:none}
+}
+
+/* --- Mejora de legibilidad en timeline --- */
+.timeline{
+  display:flex;
+  width:100%;
+  overflow-x:auto;           /* permite scroll si no cabe */
+  border-radius:20px;
+  margin:16px 0 6px;
+  box-shadow: var(--shadow);
+  border:1px solid rgba(12,65,196,.12);
+  scrollbar-width: thin;
+}
+.t-seg{
+  position:relative;
+  min-width: 220px;          /* evita que se aplaste el texto */
+  padding:16px 14px;
+  background:#fff;
+  border-right:1px solid rgba(12,65,196,.10);
+  white-space: normal;
+}
+@media (max-width: 720px){
+  .t-seg{ min-width: 180px; }
+}
+.t-title{
+  font-weight:900;
+  color:var(--wagner);
+  line-height:1.25;
+  word-break: break-word;
+  hyphens: auto;
+}
+.t-min{
+  margin-top:6px;
+  font-size:.9rem;
+  color:var(--muted);
+  font-weight:600;
+}
