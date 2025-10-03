@@ -26,26 +26,6 @@
       {
         "title": "Medio ambiente",
         "text": "Uso responsable de materiales, reciclaje creativo y cuidado del entorno. El arte también es una forma de relacionarnos con el planeta."
-      },
-      {
-        "title": "Creatividad con propósito",
-        "text": "No es crear por crear: cada actividad tiene intención formativa y conecta con proyectos, repertorio o problemas reales."
-      },
-      {
-        "title": "Sensibilidad y humanidad",
-        "text": "Empatía y respeto como base del aula: escuchamos, validamos y acompañamos procesos diversos."
-      },
-      {
-        "title": "Integralidad (técnica + emoción)",
-        "text": "La técnica cobra sentido cuando expresa algo. Integramos recursos técnicos con exploración y sensibilidad."
-      },
-      {
-        "title": "Aprendizaje significativo y en proceso",
-        "text": "Valoramos el avance paso a paso: bocetos, puchitos, ensayos y micro-muestras como evidencia real de aprendizaje."
-      },
-      {
-        "title": "Juego, curiosidad y cuidado",
-        "text": "El juego abre posibilidades y la curiosidad guía. Siempre con límites claros y cuidado de sí y de los demás."
       }
     ]
   },
@@ -145,11 +125,11 @@
           ]
         },
         {
-          "title": "Falta de guía / exceso de exploración",
+          "title": "Falta de guía, exceso de exploración",
           "text": "Exploración sin dirección ni objetivos claros.",
           "items": [
-            "Definir objetivo y criterios antes de explorar.",
-            "Cerrar con síntesis y próximos pasos."
+              "Definir objetivo y criterios antes de explorar.",
+              "Cerrar con síntesis y próximos pasos."
           ]
         },
         {
@@ -169,11 +149,38 @@
           ]
         },
         {
-          "title": "Conciencia del tiempo en clase",
+          "title": "Conciencia del tiempo, tanto en clase",
           "text": "Bloques desbalanceados o cierres apresurados.",
           "items": [
             "Cronómetro visible y recordatorios de cambio de bloque.",
             "Espacio final para reflexión y orden."
+          ]
+        },
+        {
+          "title": "Necesidad de mostrarse",
+          "text": "Protagonismo del docente que desplaza el proceso del estudiante (hablar/demostrar demasiado, centrarse en la propia ejecución).",
+          "items": [
+            "Priorizar la participación del grupo y el hacer del estudiante.",
+            "Demostraciones breves y con propósito.",
+            "Usar preguntas guía en vez de monólogos."
+          ]
+        },
+        {
+          "title": "Seguimiento",
+          "text": "Poca continuidad entre sesiones: no se revisan acuerdos, tareas o avances.",
+          "items": [
+            "Abrir con repaso de acuerdos y evidencias.",
+            "Registrar compromisos con fecha; cerrar con próximo paso.",
+            "Retroalimentación específica y accionable."
+          ]
+        },
+        {
+          "title": "Creer que no se puede seguir aprendiendo",
+          "text": "Mentalidad fija ante la dificultad o el error; resistencia al feedback.",
+          "items": [
+            "Modelar mentalidad de crecimiento (aún/no todavía).",
+            "Convertir el error en insumo de la siguiente acción.",
+            "Diseñar escalones alcanzables para recuperar confianza."
           ]
         }
       ]
